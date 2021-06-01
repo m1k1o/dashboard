@@ -53,19 +53,19 @@ h1{
 
 h2{
     font-size: 16px;
-    height: 30px;
+    margin-bottom: 1em;
 }
 
 h3{
     font-size: 20px;
     font-weight: 900;
-    height: 10px;
+    margin-bottom: .25em;
 }
 
 h4{
     font-size: 1.1em;
     font-weight: 400;
-    height: 10px;
+    margin-bottom: 1em;
 }
 
 a{
@@ -188,14 +188,19 @@ table a{
     z-index: 1;
 }
 
-#apps_loop{
+.apps_loop{
     border-bottom: 0px solid var(--color-text-acc);
     display: grid;
     grid-column-gap: 0px;
     grid-row-gap: 0px;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 64px;
-    padding-bottom: var(--module-spacing);
+    margin-bottom: var(--module-spacing);
+	border-bottom: thin solid var(--color-text-acc);
+}
+
+.apps_loop:last-child{
+	border-bottom: 0;
 }
 
 .apps_icon{
@@ -225,19 +230,19 @@ table a{
     overflow: hidden;
 }
 
-.apps_text a{
+.apps_text .app_title{
     font-size: 1em;
     font-weight: 500;
     text-transform: uppercase;
 }
 
-.apps_text span{
+.apps_text .app_address{
     color: var(--color-text-acc);
     font-size: 0.8em;
     text-transform: uppercase;
 }
 
-#links_loop{
+.links_loop{
     display: grid;
     flex-wrap: nowrap;
     grid-column-gap: 20px;
@@ -246,17 +251,17 @@ table a{
     grid-template-rows: auto;
 }
 
-#links_item{
+.links_item{
     line-height: 1.5rem;
     margin-bottom: 2em;
     -webkit-font-smoothing: antialiased;
 }
 
-#links_item h4{
+.links_item h4{
     color: var(--color-text-acc);
 }
 
-#links_item a{
+.links_item a{
     display: block;
     line-height: 2;
 }
@@ -446,12 +451,12 @@ table a{
         width: 90%;
     }
 
-    #apps_loop{
+    .apps_loop{
         grid-template-columns: 1fr 1fr 1fr;
         width: 100vw;
     }
 
-    #links_loop    {
+    .links_loop {
         grid-template-columns: 1fr 1fr 1fr;
     }
 
@@ -497,7 +502,7 @@ table a{
         font-size: 1em;
     }
 
-    #apps_loop{
+    .apps_loop{
         grid-column-gap: 0px;
         grid-row-gap: 0px;
         grid-template-columns: 1fr 1fr;
@@ -515,7 +520,7 @@ table a{
         line-height: 2.5rem;
     }
 
-    #links_loop{
+    .links_loop{
         display: grid;
         flex-wrap: nowrap;
         grid-column-gap: 20px;
@@ -527,7 +532,7 @@ table a{
 
 /* Small Screens */
 @media only screen and (max-width: 400px) {
-    #app-address {
+    .app_address {
         display: none;
     }
 }

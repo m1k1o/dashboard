@@ -78,17 +78,17 @@
         <section id="apps">
             <script type="text/handlebars-template" id="apps-template">
             <h3>Applications</h3>
-            <div id="apps_loop">
+            <div class="apps_loop">
                 {{#apps}}
-                    <div class="apps_item">
+                    <a href="https://{{url}}" class="apps_item">
                         <div class="apps_icon">
                             <span class="iconify icon" data-icon="mdi-{{icon}}"></span>
                         </div>
                         <div class="apps_text">
-                            <a href="https://{{url}}">{{name}}</a>
-                            <span id="app-address">{{url}}</span>
+                            <span class="app_title">{{name}}</span>
+                            <span class="app_address">{{url}}</span>
                         </div>
-                    </div>
+                    </a>
                 {{/apps}}
             </div>
             </script>
@@ -97,9 +97,9 @@
          <section id="links">
             <script type="text/handlebars-template" id="links-template">
             <h3>Bookmarks</h3>
-            <div id="links_loop">
+            <div class="links_loop">
                 {{#bookmarks}}
-                    <div id="links_item">
+                    <div class="links_item">
                         <h4>{{category}}</h4>
                         {{#links}}
                             <a href="{{url}}" class="theme_color-border theme_text-select">{{name}}</a>
