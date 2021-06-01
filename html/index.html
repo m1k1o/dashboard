@@ -81,13 +81,13 @@
                 <h3>{{name}}</h3>
                 <div class="apps_loop">
                     {{#apps}}
-                        <a href="https://{{url}}" class="apps_item">
+                        <a href="{{url}}" class="apps_item">
                             <div class="apps_icon">
                                 <span class="iconify icon" data-icon="mdi-{{icon}}"></span>
                             </div>
                             <div class="apps_text">
                                 <span class="app_title">{{name}}</span>
-                                <span class="app_address">{{url}}</span>
+                                <span class="app_address">{{desc}}</span>
                             </div>
                         </a>
                     {{/apps}}

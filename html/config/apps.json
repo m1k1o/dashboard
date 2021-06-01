@@ -3,31 +3,31 @@
         {
             "name": "Media",
             "apps" : [
-                {"name":"Ombi","url":"request.example.com","icon":"file-find-outline"},
-                {"name":"Plex","url":"play.example.com","icon":"plex"},
-                {"name":"Radarr","url":"movies.example.com","icon":"filmstrip"},
-                {"name":"Sonarr","url":"tv.example.com","icon":"television-box"},
-                {"name":"Lidarr","url":"music.example.com","icon":"music"},
-                {"name":"Jackett","url":"jackett.example.com","icon":"tshirt-crew-outline"},
-                {"name":"Bazarr","url":"subs.example.com","icon":"message-video"},
-                {"name":"Transmission","url":"dl.example.com","icon":"progress-download"}
+                {"name":"Ombi","desc":"request.example.com","url":"https://request.example.com","icon":"file-find-outline"},
+                {"name":"Plex","desc":"play.example.com","url":"https://play.example.com","icon":"plex"},
+                {"name":"Radarr","desc":"movies.example.com","url":"https://movies.example.com","icon":"filmstrip"},
+                {"name":"Sonarr","desc":"tv.example.com","url":"https://tv.example.com","icon":"television-box"},
+                {"name":"Lidarr","desc":"music.example.com","url":"https://music.example.com","icon":"music"},
+                {"name":"Jackett","desc":"jackett.example.com","url":"https://jackett.example.com","icon":"tshirt-crew-outline"},
+                {"name":"Bazarr","desc":"subs.example.com","url":"https://subs.example.com","icon":"message-video"},
+                {"name":"Transmission","desc":"dl.example.com","url":"https://dl.example.com","icon":"progress-download"}
             ]
         },
         {
             "name": "Applications",
             "apps" : [
-                {"name":"CloudCMD","url":"files.example.com","icon":"folder-multiple-outline"},
-                {"name":"Cockpit","url":"cp.example.com","icon":"airplane"},
-                {"name":"Feedbin","url":"rss.example.com","icon":"rss"},
-                {"name":"Filestash","url":"cloud.example.com","icon":"package"},
-                {"name":"Minio","url":"minio.example.com","icon":"server"},
-                {"name":"Mylar","url":"comics.example.com","icon":"book-open-variant"},
-                {"name":"Nextcloud","url":"cloud.example.com","icon":"weather-cloudy"},
-                {"name":"Pi-hole","url":"pihole.example.com","icon":"do-not-disturb"},
-                {"name":"Portainer","url":"port1.example.com","icon":"docker"},
-                {"name":"Stackedit","url":"md.example.com","icon":"markdown"},
-                {"name":"Ubooquity","url":"opds.example.com","icon":"library-shelves"},
-                {"name":"Youtube-DL","url":"yt.example.com","icon":"youtube"}
+                {"name":"CloudCMD","desc":"files.example.com","url":"https://files.example.com","icon":"folder-multiple-outline"},
+                {"name":"Cockpit","desc":"cp.example.com","url":"https://cp.example.com","icon":"airplane"},
+                {"name":"Feedbin","desc":"rss.example.com","url":"https://rss.example.com","icon":"rss"},
+                {"name":"Filestash","desc":"cloud.example.com","url":"https://cloud.example.com","icon":"package"},
+                {"name":"Minio","desc":"minio.example.com","url":"https://minio.example.com","icon":"server"},
+                {"name":"Mylar","desc":"comics.example.com","url":"https://comics.example.com","icon":"book-open-variant"},
+                {"name":"Nextcloud","desc":"cloud.example.com","url":"https://cloud.example.com","icon":"weather-cloudy"},
+                {"name":"Pi-hole","desc":"pihole.example.com","url":"https://pihole.example.com","icon":"do-not-disturb"},
+                {"name":"Portainer","desc":"port1.example.com","url":"https://port1.example.com","icon":"docker"},
+                {"name":"Stackedit","desc":"md.example.com","url":"https://md.example.com","icon":"markdown"},
+                {"name":"Ubooquity","desc":"opds.example.com","url":"https://opds.example.com","icon":"library-shelves"},
+                {"name":"Youtube-DL","desc":"yt.example.com","url":"https://yt.example.com","icon":"youtube"}
             ]
         }
     ]

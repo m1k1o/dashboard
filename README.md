@@ -38,8 +38,8 @@ Add your apps by editing apps.json:
     {
       "name": "Name of the section",
       "apps" : [
-        {"name":"Name of app 1","url":"sub1.example.com","icon":"icon-name"},
-        {"name":"Name of app 2","url":"sub2.example.com","icon":"icon-name"}
+        {"name":"Name of app 1","desc":"sub1.example.com","url":"https://sub1.example.com","icon":"icon-name"},
+        {"name":"Name of app 2","desc":"sub2.example.com","url":"https://sub2.example.com","icon":"icon-name"}
       ]
     }
   ]
@@ -48,7 +48,6 @@ Add your apps by editing apps.json:
 
 Please note:
 
- - No `http://` in the URL.
  - No `,` at the end of the last app's line.
  - Find the names  of icons to use at [Material Design Icons](https://materialdesignicons.com/).
 
