@@ -34,10 +34,15 @@ Add your apps by editing apps.json:
 
 ```json
 {
-   "apps": [
-	   {"name":"Name of app 1","url":"sub1.example.com","icon":"icon-name"},
-	   {"name":"Name of app 2","url":"sub2.example.com","icon":"icon-name"}
-   ]
+  "sections": [
+    {
+      "name": "Name of the section",
+      "apps" : [
+        {"name":"Name of app 1","url":"sub1.example.com","icon":"icon-name"},
+        {"name":"Name of app 2","url":"sub2.example.com","icon":"icon-name"}
+      ]
+    }
+  ]
 }
 ```
 

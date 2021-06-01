@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>SUI</title>
+    <title>Dasbhoard</title>
     <meta charset="utf-8">
     <meta http-equiv="Default-Style" content="">
     <meta content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport" />
@@ -67,7 +67,7 @@
     <main id="container" class="fade">
 
         <section id="search">
-            <input name="keywords" type="text" id="keywords" size="50" spellcheck="false" autofocus="true" onkeydown="handleKeyPress(event)">
+            <input placeholder="SEARCH..." name="keywords" type="text" id="keywords" size="50" spellcheck="false" autofocus="true" onkeydown="handleKeyPress(event)">
         </section>
 
         <section id="header">
@@ -77,20 +77,22 @@
 
         <section id="apps">
             <script type="text/handlebars-template" id="apps-template">
-            <h3>Applications</h3>
-            <div class="apps_loop">
-                {{#apps}}
-                    <a href="https://{{url}}" class="apps_item">
-                        <div class="apps_icon">
-                            <span class="iconify icon" data-icon="mdi-{{icon}}"></span>
-                        </div>
-                        <div class="apps_text">
-                            <span class="app_title">{{name}}</span>
-                            <span class="app_address">{{url}}</span>
-                        </div>
-                    </a>
-                {{/apps}}
-            </div>
+            {{#sections}}
+                <h3>{{name}}</h3>
+                <div class="apps_loop">
+                    {{#apps}}
+                        <a href="https://{{url}}" class="apps_item">
+                            <div class="apps_icon">
+                                <span class="iconify icon" data-icon="mdi-{{icon}}"></span>
+                            </div>
+                            <div class="apps_text">
+                                <span class="app_title">{{name}}</span>
+                                <span class="app_address">{{url}}</span>
+                            </div>
+                        </a>
+                    {{/apps}}
+                </div>
+            {{/sections}}
             </script>
         </section>
 
