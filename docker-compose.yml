@@ -1,24 +1,11 @@
-version: "3.5"
+version: "3.7"
+
 services:
-
-  sui:
-    container_name: sui
-    restart: always
-    build:
-      context: ./
-    environment:
-      - VIRTUAL_HOST=test.laserr.net
-    networks:
-      - nginx-proxy
-      - public
-    ports:
-      - 4000:80
+  dashbaoard:
+    image: "nginx:latest"
+    container_name: "dashbaoard"
+    restart: "unless-stopped"
     volumes:
-      - ./:/opt/html
-
-networks:
-  nginx-proxy:
-    external: true
-  public:
-    external:
-      name: public
+      - "./html:/usr/share/nginx/html:ro"
+    ports:
+      - 80:80
