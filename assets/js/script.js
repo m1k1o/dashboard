@@ -30,8 +30,6 @@ function greet() {
 }
 
 function loadFunctions() {
-  date();  
+  date();
   greet();
 }
-
-

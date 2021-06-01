@@ -9,13 +9,13 @@
 
 #### Prerequisites:
  - Docker: [Linux](https://docs.docker.com/install/linux/docker-ce/debian/), [Mac](https://hub.docker.com/editions/community/docker-ce-desktop-mac), [Windows](https://hub.docker.com/editions/community/docker-ce-desktop-windows)
- - [Docker-compose](https://docs.docker.com/compose/install/) 
+ - [Docker-compose](https://docs.docker.com/compose/install/)
 
 #### Install:
 
  - `git clone` this repository
  - Build and bring up with `docker-compose up -d`
- - The page should be available at  `http://localhost:4000` 
+ - The page should be available at  `http://localhost:4000`
 
 To run at a different port open edit docker-compose.yml:
 
@@ -47,35 +47,35 @@ Please note:
 Add your bookmarks by editing links.json:
 
 ```
-{  
-   "bookmarks":[  
-      {  
-         "category":"Category1",
-         "links":[  
-            {  
-               "name":"Link1",
-               "url":"http://example.com"
-            },
-            {  
-               "name":"Link2",
-               "url":"http://example.com"
-            }
-         ]
-      },
-      {  
-         "category":"Category2",
-         "links":[  
-            {  
-               "name":"Link1",
-               "url":"http://example.com"
-            },
-            {  
-               "name":"Link2",
-               "url":"http://example.com"
-            }
-         ]
-      }
-   ]
+{
+  "bookmarks":[
+    {
+      "category":"Category1",
+      "links":[
+        {
+          "name":"Link1",
+          "url":"http://example.com"
+        },
+        {
+          "name":"Link2",
+          "url":"http://example.com"
+        }
+      ]
+    },
+    {
+      "category":"Category2",
+      "links":[
+        {
+          "name":"Link1",
+          "url":"http://example.com"
+        },
+        {
+          "name":"Link2",
+          "url":"http://example.com"
+        }
+      ]
+    }
+  ]
 }
 ```
 Add names for the categories you wish to define and add the bookmarks for each category.
@@ -84,7 +84,6 @@ Please note:
 
  - No `http://` in the URL
  - No `,` at the end of the last bookmark in a category and at the end of the last category
-
 
 #### Color themes
 These can be added or customized in the themer.js file. When changing the name of a theme or adding one, make sure to edit this section in index.html accordingly:
